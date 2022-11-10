@@ -100,8 +100,7 @@ In this exercise, you will practice working with project parameters, package var
     4. Once the expression evaluates correctly, click `OK`.
 7. Create a project parameter named **DestinationPath** to point to the path hard coded in the
  **FF\_EmployeeHistory** connection manager.
- 
-This feature can be used to change the drive letter dynamically when the package moves from the
+ This feature can be used to change the drive letter dynamically when the package moves from the
  development to test and then production servers. You will practice configuring environments in a later
  chapter.
 
@@ -198,8 +197,7 @@ This feature can be used to change the drive letter dynamically when the package
          and
          the Send Mail Task Editor.
     3. Change the DelayValidation property to True.
-     
-    When executing a package, the server validates all properties required for successful execution.
+     When executing a package, the server validates all properties required for successful execution.
      In the Send Mail task, if all of your email address expressions evaluate to properly formed addresses, the
      DelayValidation property does not need to be set to True in SSIS 2014 and later. However, since a
      validation error will
