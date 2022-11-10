@@ -104,16 +104,16 @@
  the existence of the table
  before issuing the `DROP TABLE` command.
  
-```
-USE AdventureWorks;
+    ```
+    USE AdventureWorks;
 
-DROP TABLE IF EXISTS Ch3; 
-GO
-CREATE TABLE Ch3
-    (col1 int, col2 varchar(20), col3 varchar(250))
-;
+    DROP TABLE IF EXISTS Ch3; 
+    GO
+    CREATE TABLE Ch3
+        (col1 int, col2 varchar(20), col3 varchar(250))
+    ;
 
-```
+    ```
 
     1. Click the `New Query` button (![new query button](Images/ssis-new-query.png)) or type `Ctrl+N` to open a new query window.
     2. Type the above code in the new query window. The code can be opened from **DROP TABLE
