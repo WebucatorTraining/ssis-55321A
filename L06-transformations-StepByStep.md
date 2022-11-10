@@ -151,8 +151,7 @@ The goal of this exercise is to review the process of using a lookup transformat
     5. Change the Data Type property to **four-byte signed integer [DT\_I4]**.
     6. Click `OK`.
 5. Use a Lookup transformation to Add the SalesPerson’s name as a single column to the ResellerSales output.
- 
-You have to use the Person.Person table in the AdventureWorks database to locate the sales person’s name. The
+ You have to use the Person.Person table in the AdventureWorks database to locate the sales person’s name. The
  lookup
  should be performed by matching the `SalesPersonID` and the `BusinessEntityID`. The
  transformation should be set up so as

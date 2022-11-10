@@ -11,3 +11,4 @@ After converting:
 2. In **L04-common-tasks-StepByStep.md**
    1. Move "If you are using a corporate email server, the To and From addresses should both be your email address." to line before an italicize.
    2. Unindent one level lines 182-187.
+3. In **L06-transformations-StepByStep.md**, delete `\n` at line 155.
