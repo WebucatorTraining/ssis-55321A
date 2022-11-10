@@ -67,11 +67,8 @@ The goal of this exercise is to create a new project and then modify the default
     2. Click the `Stop Debugging` button (![Stop debugging button](Images/ssis-stop-debugging-button.png)) to return to Design mode.
 6. Add a `Send Mail Task` that will run only when the copy task fails. Configure the SMTP
  connection manager to point to localhost. Add a subject line and message source telling the recipient that the
- copy file task failed.
+ copy file task failed. *If you are using a corporate email server, the To and From addresses should both be your email address.*
  
-If you are using a corporate email server, the To and From addresses should both be your
- email address.
-
     1. Drag a Send Mail Task onto the Control flow and connect the Copy File task to it. Right-click the
      connection and select `Failure` as the type of connection.
     2. Double-click the `Send Mail Task` to open the Send Mail Task Editor. On the Mail page,
@@ -182,12 +179,12 @@ The goal of this exercise is to utilize the Data Profiling Task to explore the d
     
     
     
-        1. In the Data Profiling Task Editor, switch to the Profile Request tab.
-        2. Select `Candidate Key Profile Request` from the Profile Type drop-down list as shown in
-         Figure 18:
-         ![Figure 18: Selecting Candidate Key Profiling Request](Images/ssis-selecting-candidate-key-profiling-request.png "Figure 18: Selecting Candidate Key Profiling Request")
-        3. Configure the Request Properties as specified in steps a-d above.
-        4. Do not close the Data Profiling Task Editor.
+     1. In the Data Profiling Task Editor, switch to the Profile Request tab.
+     2. Select `Candidate Key Profile Request` from the Profile Type drop-down list as shown in
+      Figure 18:
+      ![Figure 18: Selecting Candidate Key Profiling Request](Images/ssis-selecting-candidate-key-profiling-request.png "Figure 18: Selecting Candidate Key Profiling Request")
+     3. Configure the Request Properties as specified in steps a-d above.
+     4. Do not close the Data Profiling Task Editor.
 If you want to delete a Profile Request, click it and hit the Delete key.
 7. Configure a Column Value Distribution Profile Request with the following settings:
     1. ConnectionManager – the AdventureWorksDW connection manager created in Step 2.
