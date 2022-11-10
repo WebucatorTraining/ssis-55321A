@@ -2,13 +2,6 @@
 
 ## Exercise 1—Working with Data Sources and Destinations
 
-In this lab you will create a package with three data flow tasks. You will configure each of these tasks to use a
- variety of data sources and data destinations. Note that there are many ways to accomplish the same task.
-
-The **Solution** section provides a set of individual steps to accomplish the objectives listed here,
- and a variety of
- methods are demonstrated. You can use the methods that you prefer.
-
 1. Create an SSIS project named Ch5LabEx1 in the **Studentfiles** folder. Rename the
  default package to **DataSourcesAndDestinations.dtsx**.
 2. Add three Data Flow tasks to the Control Flow tab. Rename the Data Flow tasks to:
