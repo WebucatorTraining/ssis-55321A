@@ -185,8 +185,7 @@ Please note, there are several ways to accomplish the same task in SSIS. The boo
  use the
  variables defined in the **Dev** environment. Creating the batch file will make it easier for you to
  troubleshoot and make modifications to your code, along with giving you the ability to reuse it.
- 
-You will need to specify the location of the package, the server where the package is located,
+ You will need to specify the location of the package, the server where the package is located,
  and the environment id.
 
     1. Open **Notepad**.
