@@ -14,3 +14,4 @@ After converting:
 3. In **L06-transformations-StepByStep.md**, delete `\n` at line 155.
 4. In **L07-making-packages-dynamic-StepByStep.md**, delete `\n` at lines 103 and 201 (with preceding 4 spaces).
 5. **L08-containers-HighLevel.md** contained all the high-level and step-by-step instructions, and L08-containers-StepByStep.md contained none of it. Fix that.
+6. In **L09-reliability-StepByStep.md**, delete lines 54 and 75, and tab in lines 64-66.

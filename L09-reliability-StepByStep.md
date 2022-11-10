@@ -50,8 +50,7 @@ Every task in this package is intended to fail and generate an error message.
 5. Edit the script. Use a Try/Catch block to see if your array already exists. If it does, add the current error
  descriptions to the array. If not, initialize the array, and then concatenate any new messages. To cause the error
  messages to be on individual lines, add a hard return after each new message.
- 
-The **code.txt** file located in the **Answers** folder
+ The **code.txt** file located in the **Answers** folder
  includes all the scripts required for the
  labs. You can copy and paste from the appropriate section of this file to save typing.
 
@@ -62,9 +61,9 @@ The **code.txt** file located in the **Answers** folder
      ![Figure 14: Adding Code](Images/ssis-adding-code.png "Figure 14: Adding Code")
     3. Verify that the following original code is after the code that you added.
      
-    ```
-    Dts.TaskResult = ScriptResults.Success End Sub
-    ```
+        ```
+        Dts.TaskResult = ScriptResults.Success End Sub
+        ```
     4. Click the `Save All` icon (![save all](Images/ssis-save-all.png)),
      and then click `Close` (`X`), in the upper right corner.
     5. In the Script Task Editor, click `OK` to close the editor dialog box.
@@ -72,8 +71,7 @@ The **code.txt** file located in the **Answers** folder
  collected error messages. Remember, task error messages are propagated to the parent, so depending on where and
  how
  you create your script and mail tasks, you may receive multiple emails.
- 
-In addition to using an Event Handler, there are other ways to create a single email message with
+ In addition to using an Event Handler, there are other ways to create a single email message with
  collected error messages included. Feel free to experiment.
 
     1. In the Executable drop-down list of the Event Handlers designer, expand Executables, select the
