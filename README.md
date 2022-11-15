@@ -16,3 +16,8 @@ After converting:
 5. **L08-containers-HighLevel.md** contained all the high-level and step-by-step instructions, and L08-containers-StepByStep.md contained none of it. Fix that.
 6. In **L09-reliability-StepByStep.md**, delete lines 54 and 75, and tab in lines 64-66.
 7. In **L10-deploying-StepByStep.md**, delete line 189.
+8. Fix indenting in **L02-ssdt-HighLevel.md**, **L02-ssdt-StepByStep.md**, and **L10-deploying-StepByStep.md**. Search for content starting with “If you did not perform” and make sure that falls under the numbered item.
+9. Search **\`([\w\s]+)\`** and replace with `<code class="nocopy">$1</code>` as per this note from David Behymer:
+      ```
+       our platform interprets backticks (`) as copyable text.  So, as things are now, you will see the copy icon next to all words that have the backticks.   Refer to the screenshot below for an example.   If you’re OK with that you can choose to leave it that way.  If not, you will need to replace the backticks with <code class="nocopy"> and </code>.  This will render the text highlighted in gray without the copy icon.
+       ```

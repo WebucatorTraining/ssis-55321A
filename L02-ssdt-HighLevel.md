@@ -13,10 +13,11 @@ The goal of this exercise is to practice adding an existing package to an Integr
 4. Review the Control Flow and Data Flow tabs. Notice that the package is moving data from a csv file to the
  MyEmployeeHistory table.
  
-If you did not perform the lab in Chapter 1 or if your `MyEmployeeHistory` table was deleted,
- import and run the **ImportMyEmployeeHistory.dtsx** file in the
- **Chapter 02 SSDT\Labs\Starters** folder before running the
- **EmployeeHistoryAppend.dtsx** package.
+    If you did not perform the lab in Chapter 1 or if your <code class="nocopy">MyEmployeeHistory</code> table was deleted,
+    import and run the **ImportMyEmployeeHistory.dtsx** file in the
+    **Chapter 02 SSDT\Labs\Starters** folder before running the
+    **EmployeeHistoryAppend.dtsx** package.
+
 5. Run the package and verify that it ran successfully. End debug mode to return to design mode.
 6. Use SQL Server Management Studio to verify that the new rows were added to the dbo.MyEmployeeHistory table in
  the Adventureworks database.

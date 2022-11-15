@@ -11,8 +11,8 @@
     3. In the New Project window, expand **Installed > Business Intelligence > Integration
      Services**. Select **Integration Services Project**. Change the Name to
      **Ch3Lab**. Browse to the **\Studentfiles** Verify that **Create directory for
-     solution** is checked, and then click `OK`.
-    4. In the Solution Explorer, click `Ch3Lab`. In the Properties window, hover over
+     solution** is checked, and then click <code class="nocopy">OK</code>.
+    4. In the Solution Explorer, click <code class="nocopy">Ch3Lab</code>. In the Properties window, hover over
      **FullPath** and write down the path to your solution folder.
 2. Rename the default **Package.dtsx** file to
  **Ch3Precedence.dtsx**.
@@ -43,40 +43,40 @@
     5. Click to select one of the lines to Email Failure, right-click and select **Edit**.
     6. Change the Multiple constraints setting to **Logical OR. One constraint must evaluate to
      True**.
-    7. Click `OK`. The completed package should appear as in Figure 16.
+    7. Click <code class="nocopy">OK</code>. The completed package should appear as in Figure 16.
      ![Figure 16: Completed Package](Images/ssis-completed-package.png "Figure 16:     Completed Package")
 6. Execute the entire package to verify the “on success” path.
-    1. Click the `Start` button to run the package. A green circle with a check mark (![Green check](Images/ssis-green-checkmark.png)) should appear at the
+    1. Click the <code class="nocopy">Start</code> button to run the package. A green circle with a check mark (![Green check](Images/ssis-green-checkmark.png)) should appear at the
      corner of all the tasks except “Email failure”.
-    2. Click the `Stop Debugging` button (![Stop debugging button](Images/ssis-stop-debugging-button.png)) to return to Design mode.
+    2. Click the <code class="nocopy">Stop Debugging</code> button (![Stop debugging button](Images/ssis-stop-debugging-button.png)) to return to Design mode.
 7. Modify the Required Step 1 task to return a “fail” result even though it doesn’t fail. Execute the package to
  test
  the “failure” path.
-    1. In the Properties window of the Required Step 1 task (`F4` will display this window if you closed
+    1. In the Properties window of the Required Step 1 task (<code class="nocopy">F4</code> will display this window if you closed
      it), in the
      Misc section, set the ForceExecutionResult property to **Failure**.
-    2. Click the `Start` button to run the package. Although the Required Step 1 task completes, you
+    2. Click the <code class="nocopy">Start</code> button to run the package. Although the Required Step 1 task completes, you
      will
      see a red circle with an x (![Red X](Images/ssis-red-x.png)) in the corner of
      this task. The Email Failure task should have a green circle with a
      check mark (![Green check](Images/ssis-green-checkmark.png)).
-    3. Click the `Stop Debugging` button (![Stop debugging button](Images/ssis-stop-debugging-button.png)) to return to Design mode.
+    3. Click the <code class="nocopy">Stop Debugging</code> button (![Stop debugging button](Images/ssis-stop-debugging-button.png)) to return to Design mode.
 8. Change the ForceExecutionResult property Required Step 1 back to None.
     1. In the Properties window of the Required Step 1 task, in the Misc section, set the ForceExecutionResult
      property to **None**.
 9. If time permits, test forcing Required Step 2 to fail and checking that failure path.
     1. In the Properties window of the Required Step 2 task, in the Misc section, set the ForceExecutionResult
      property to **Failure**.
-    2. Click the `Start` button to run the package. Although the Required Step 2 task completes, you
+    2. Click the <code class="nocopy">Start</code> button to run the package. Although the Required Step 2 task completes, you
      will
      see a red circle with an x (![Red X](Images/ssis-red-x.png)) in the corner of
      this task. The Email Failure task should have a green circle with a
      check mark .
-    3. Click the `Stop Debugging` button (![Stop debugging button](Images/ssis-stop-debugging-button.png)) to return to Design mode.
+    3. Click the <code class="nocopy">Stop Debugging</code> button (![Stop debugging button](Images/ssis-stop-debugging-button.png)) to return to Design mode.
     4. In the Properties window of the Required Step 1 task, in the Misc section, set the ForceExecutionResult
      property to **None**.
 10. Create a new package and rename it to **3Building.dtsx**.
-    1. In the Solution Explorer, Click `SSIS Packages`, right-click and select **New SSIS
+    1. In the Solution Explorer, Click <code class="nocopy">SSIS Packages</code>, right-click and select **New SSIS
      Package**.
     2. Click **Package.dtsx** and select **Rename**. Rename the package
      **3Building.dtsx**.
@@ -88,7 +88,7 @@
     2. Type **DROP and CREATE**.
 13. Open SQL Server Management Studio (SSMS) and connect to your class SQL Server instance with the appropriate
  credentials.
-    1. In the Connect to Server dialog box, verify the following options, and then click `Connect`.
+    1. In the Connect to Server dialog box, verify the following options, and then click <code class="nocopy">Connect</code>.
      
     If you are not running the database engine on your local computer, enter the appropriate
      server name and authentication information for your environment.
@@ -100,9 +100,9 @@
 | Server name | (local) |
 | Authentication | Windows Authentication |
 14. Open a new query window and type the following SQL Code. (If you are using SQL Server 2014 or earlier, you must
- replace the `IF EXISTS` clause from the DROP table with an `IF` statement that checks for
+ replace the <code class="nocopy">IF EXISTS</code> clause from the DROP table with an <code class="nocopy">IF</code> statement that checks for
  the existence of the table
- before issuing the `DROP TABLE` command.
+ before issuing the <code class="nocopy">DROP TABLE</code> command.
  
     ```
     USE AdventureWorks;
@@ -115,12 +115,12 @@
 
     ```
 
-    1. Click the `New Query` button (![new query button](Images/ssis-new-query.png)) or type `Ctrl+N` to open a new query window.
+    1. Click the <code class="nocopy">New Query</code> button (![new query button](Images/ssis-new-query.png)) or type `Ctrl+N` to open a new query window.
     2. Type the above code in the new query window. The code can be opened from **DROP TABLE
      Ch3.sql** in the
      **Chapter 03 Control Flow\Labs\Starters** folder if needed.
 15. Execute the query to verify that it works.
-    1. Press `F5` or click the `Execute` button (![execute button](Images/ssis-execute.png)) to run the query.
+    1. Press <code class="nocopy">F5</code> or click the <code class="nocopy">Execute</code> button (![execute button](Images/ssis-execute.png)) to run the query.
 16. Copy the code from SSMS into the clipboard memory, and then return to SSDT. Do not close SSMS.
     1. Highlight the code and press `Ctrl+C`.
 17. Open the DROP and CREATE task editor and set the following properties:
@@ -134,7 +134,7 @@
         3. Click <New connection …> in the Connection property.
         4. If a Data connection for the AdventureWorks database is showing from a previous exercise, you can pick
          it,
-         and skip to Step (8). Otherwise, click `New` and follow the remaining directions.
+         and skip to Step (8). Otherwise, click <code class="nocopy">New</code> and follow the remaining directions.
         5. Verify that **Native OLE DB\SQL Native Client 11.0** is selected in the Provider drop-down
          list.
         6. Type a **period** (**.**) in the Server name box.
@@ -143,16 +143,16 @@
          Authentication as you were directed for the class.
         7. Select **AdventureWorks** from the drop-down list under Select or enter a database name,
          and
-         then click `OK`.
-        8. Click `OK` to close the Configure OLE DB Connection Manager dialog box.
+         then click <code class="nocopy">OK</code>.
+        8. Click <code class="nocopy">OK</code> to close the Configure OLE DB Connection Manager dialog box.
         9. Click the ellipsis (`…`) in the SQLStatement box to open the dialog box.
         10. Paste the SQL code from your SSMS query in the Enter SQL Query dialog box.
-        11. Click `OK` to close the Enter SQL Query dialog box.
-        12. Click `OK` to close the Execute SQL Task Editor.
+        11. Click <code class="nocopy">OK</code> to close the Enter SQL Query dialog box.
+        12. Click <code class="nocopy">OK</code> to close the Execute SQL Task Editor.
 18. Execute the DROP and CREATE task to verify that it works.
 19. Return to SSMS and browse the Object Explorer to verify that the dbo.Ch3 table exists as shown in Figure 17.
  You may need to Right-click > Refresh the tables folder to see the new table:
  ![Figure 17: Verify Table Existence](Images/ssis-verify-table-existence.png "Figure           17: Verify Table Existence")
 20. Close SSMS.
-21. Click the `Save All` button (![Save All button](Images/ssis-save-all.png)) to save, and then click `File > Close Solution` to close your
+21. Click the <code class="nocopy">Save All</code> button (![Save All button](Images/ssis-save-all.png)) to save, and then click `File > Close Solution` to close your
  **Ch3Lab** Leave SSDT open for the next chapter.

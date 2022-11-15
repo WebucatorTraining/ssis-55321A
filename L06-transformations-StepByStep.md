@@ -15,9 +15,9 @@ The goal of this exercise is to reinforce your ability to work with the derived 
     1. Open **SQL Server Data Tools**.
     2. Select `File > Open > File`. Navigate to the
      **Chapter 06 Transform\Labs\Starters\Ch05LabEx1.sln** file, and then click
-     `Open`.
+     <code class="nocopy">Open</code>.
     3. In Solution Explorer under SSIS Packages, right-click **DataSourcesandDestinations.dtsx** and then
-     click `Open`.
+     click <code class="nocopy">Open</code>.
 2. Modify the DF\_ProductsFFtoOLEDB data flow task to include a Derived Column transformation. The transformation
  should add a new column that concatenates the ProductNumber before the Name. Name the new column
  **ProdBusinessKey**. Use the Advanced Editor to change the ProdBusinessKey derived column to a string
@@ -45,7 +45,7 @@ The goal of this exercise is to reinforce your ability to work with the derived 
     ```
     [ProductNumber]+" "+[Name]
     ```
-    8. Click `OK` to close the Derived Column Transformation Editor.
+    8. Click <code class="nocopy">OK</code> to close the Derived Column Transformation Editor.
     9. Right-click the **Derived Column** transformation, and then click `Show Advanced
      Editor`.
     10. Change to the Input and Output Properties tab.
@@ -53,7 +53,7 @@ The goal of this exercise is to reinforce your ability to work with the derived 
      ProdBusinessKey.
     12. In the Data Type Properties section on the right, change the DataType property to **string
      [DT\_STR]**.
-    13. Click `OK` to close the Advanced Editor for Derived Column dialog box.
+    13. Click <code class="nocopy">OK</code> to close the Advanced Editor for Derived Column dialog box.
 3. Use the **ModifyCh5Products.sql** file located in the **Chapter
  06
  Transform\Labs\Starters** folder to add a new column to the destination table. Modify the destination and
@@ -66,27 +66,27 @@ The goal of this exercise is to reinforce your ability to work with the derived 
          **Note:** If your configuration varies from the default classroom configuration, enter the
          appropriate
          server name and credentials.
-    2. Click `Connect`.
+    2. Click <code class="nocopy">Connect</code>.
     3. Click **File > Open > File**. Navigate to the **Chapter 06
-     Transform\Labs\Starters\ModifyCh5Products.sql** file, and then click `Open`.
-    4. Click `Execute`. “ Query executed successfully” should be displayed on the status bar at the
+     Transform\Labs\Starters\ModifyCh5Products.sql** file, and then click <code class="nocopy">Open</code>.
+    4. Click <code class="nocopy">Execute</code>. “ Query executed successfully” should be displayed on the status bar at the
      bottom of
      the window.
     5. Leave SQL Server Management Studio open.
     6. Switch back to SSDT.
     7. Connect the new derived column to the destination.
-    8. Right-click the **OLE DB Destination** component, and then click `Edit`.
+    8. Right-click the **OLE DB Destination** component, and then click <code class="nocopy">Edit</code>.
     9. Change to the **Mappings** page.
     10. Verify that all input columns are mapped as shown in Figure 22:
      ![Figure 22: Mappings](Images/ssis-mappings.png "Figure 22: Mappings")
-    11. Click `OK` to close the OLE DB Destination Editor.
+    11. Click <code class="nocopy">OK</code> to close the OLE DB Destination Editor.
 4. Test just this dataflow and verify that the new column is populated in the Ch5Products table.
-    1. In SSDT, right-click inside the Data Flow tab and click `Execute Task`. The three items should
+    1. In SSDT, right-click inside the Data Flow tab and click <code class="nocopy">Execute Task</code>. The three items should
      execute
      successfully. Click Stop Debugging.
     2. Return to SQL Server Management Studio and open a **New Query**. Type the following query, and
      then
-     click `Execute`:
+     click <code class="nocopy">Execute</code>:
      
     ```
     Use AdventureWorks;
@@ -123,13 +123,13 @@ The goal of this exercise is to review the process of using a lookup transformat
     !ISNULL(SalesPersonID)
     ```
     8. Change the Default output name to **InternetSales**.
-    9. Click `OK` to dismiss the Derived Column Transformation Editor.
+    9. Click <code class="nocopy">OK</code> to dismiss the Derived Column Transformation Editor.
 2. The InternetSales output should go directly to the RecordSet destination. Rename this destination
  appropriately.
     1. Click the Conditional Split component and drag the blue data flow path arrow to the
      **RS\_SalesOrder\_Destination**.
     2. In the Input Output Selection dialog box that appears, select **InternetSales** from the Output
-     drop-down list, and then click `OK`.
+     drop-down list, and then click <code class="nocopy">OK</code>.
     3. Right-click the **RS\_SalesOrder\_Destination** component and select **Rename**.
      Rename
      the component **InternetSales\_Destination**.
@@ -149,11 +149,11 @@ The goal of this exercise is to review the process of using a lookup transformat
     3. Expand **Output Columns**.
     4. Click SalesPersonID.
     5. Change the Data Type property to **four-byte signed integer [DT\_I4]**.
-    6. Click `OK`.
+    6. Click <code class="nocopy">OK</code>.
 5. Use a Lookup transformation to Add the SalesPerson’s name as a single column to the ResellerSales output.
  You have to use the Person.Person table in the AdventureWorks database to locate the sales person’s name. The
  lookup
- should be performed by matching the `SalesPersonID` and the `BusinessEntityID`. The
+ should be performed by matching the <code class="nocopy">SalesPersonID</code> and the <code class="nocopy">BusinessEntityID</code>. The
  transformation should be set up so as
  not to fail even if a sales person’s name cannot be found.
 
@@ -182,7 +182,7 @@ The goal of this exercise is to review the process of using a lookup transformat
         * Check the box next to the **FullName** column in the Available Lookup Columns to include it
          in the
          output.
-        * Click `OK`.
+        * Click <code class="nocopy">OK</code>.
 6. Send the full Reseller Sales Output to a new flat file named **ResellerSalesOrders2011.csv**.
  Configure the output to append to the end of the file each time the component is run.
     1. Drag a **Flat File Destination** from the Other Destinations area of the SSIS Toolbox to the
@@ -192,22 +192,22 @@ The goal of this exercise is to review the process of using a lookup transformat
      Destination**.
     3. In the Input Output Selection dialog box, set Output to **Lookup Match Output** using the
      drop-down
-     list, and then click `OK`.
+     list, and then click <code class="nocopy">OK</code>.
     4. Double-click the **Flat File Destination**. In the Flat File Destination Editor, uncheck
-     **Overwrite data in the file**, and then click `New`. Verify that Delimited is
+     **Overwrite data in the file**, and then click <code class="nocopy">New</code>. Verify that Delimited is
      selected in the
-     Flat File Format dialog box, and then click `OK`.
+     Flat File Format dialog box, and then click <code class="nocopy">OK</code>.
     5. In the Flat File Connection Manager Editor, name the connection manager **FF\_ResellerSales**.
      Click
-     `Browse`. Navigate to your **Studentfiles** folder and type
+     <code class="nocopy">Browse</code>. Navigate to your **Studentfiles** folder and type
      **ResellerSalesOrders2011** for the file name. Use the drop-down list next to the File name box
      to change
-     the file type to **CSV files (\*.csv)**, and then click `Open`.
+     the file type to **CSV files (\*.csv)**, and then click <code class="nocopy">Open</code>.
     6. In the Flat File Connection Manager Editor, type one double-quote (“) in the Text qualifier textbox.
-    7. Check **Column names in the first data** row, and then click `OK` to dismiss the
+    7. Check **Column names in the first data** row, and then click <code class="nocopy">OK</code> to dismiss the
      Flat
      File Connection Manager Editor.
-    8. In the Flat File Destination Editor, click `Mappings`, and then click `OK`.
+    8. In the Flat File Destination Editor, click <code class="nocopy">Mappings</code>, and then click <code class="nocopy">OK</code>.
 7. Test this dataflow and verify that the csv file has the correct information.
     1. Right-click the design surface and select **Execute Task**. After the task completes
      successfully,

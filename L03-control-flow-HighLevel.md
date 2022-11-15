@@ -30,9 +30,9 @@
 13. Open SQL Server Management Studio (SSMS) and connect to your class SQL Server instance with the appropriate
  credentials.
 14. Open a new query window and type the following SQL Code. (If you are using SQL Server 2014 or earlier, you must
- replace the `IF EXISTS` clause from the DROP table with an `IF` statement that checks for
+ replace the <code class="nocopy">IF EXISTS</code> clause from the DROP table with an <code class="nocopy">IF</code> statement that checks for
  the existence of the table
- before issuing the `DROP TABLE` command:
+ before issuing the <code class="nocopy">DROP TABLE</code> command:
  
 ```
 USE AdventureWorks;
@@ -55,5 +55,5 @@ CREATE TABLE Ch3
  may need to `Right-click > Refresh` the tables folder to see the new table:
  ![ssis tables folder](Images/ssis-tables-folder.png)
 20. Close SSMS.
-21. Click the `Save All` button (![Save All button](Images/ssis-save-all.png)) to save, and then click `File > Close Solution` to close your
+21. Click the <code class="nocopy">Save All</code> button (![Save All button](Images/ssis-save-all.png)) to save, and then click `File > Close Solution` to close your
  **Ch3Lab** solution. Leave SSDT open for the next chapter.

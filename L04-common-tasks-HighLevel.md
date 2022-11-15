@@ -15,7 +15,7 @@ The goal of this exercise is to create a new project and then modify the default
  project
  TargetServerVersion to SQL Server 2016.
 2. Rename the default **Package.dtsx** file to **CopyFile.dtsx**.
-3. Add a `File System Task` item to the Control Flow and name it **Copy File**.
+3. Add a <code class="nocopy">File System Task</code> item to the Control Flow and name it **Copy File**.
 4. Set the following properties for the Copy File task.
     1. Set the **Operation** to **Copy file**.
     2. Set the **SourceConnection** to a new connection manager that points to the existing file **Chapter 04 Common Tasks\Labs\Starters\ ProductsBlue.csv**.
@@ -27,7 +27,7 @@ The goal of this exercise is to create a new project and then modify the default
      time.
 5. Execute just this new task to test it. Once the task has completed successfully, leave debug mode. If the task
  failed, double check your settings and execute the task again.
-6. Add a `Send Mail Task` that will run only when the copy task fails. Configure the SMTP connection
+6. Add a <code class="nocopy">Send Mail Task</code> that will run only when the copy task fails. Configure the SMTP connection
  manager to point to localhost. Add a subject line and message source telling the recipient that the copy file task
  failed.
  
@@ -58,7 +58,7 @@ The goal of this exercise is to utilize the Data Profiling Task to explore the d
 3. Add an ADO.NET project connection manager to the AdventureWorksDW database.
 4. Create a new package named **Data Profiling** in the **Ch4LabEx1** project that you
  created in Exercise 1. If you did not complete exercise 1, you can use the solution located at **Chapter 04 Common Tasks\Labs\Answers\Ch4LabEx1**.
-5. Add a `Data Profiling Task` to the control flow that uses a new file connection as the destination.
+5. Add a <code class="nocopy">Data Profiling Task</code> to the control flow that uses a new file connection as the destination.
  If the task is run multiple times, the existing data should be overwritten. Configure four profile requests as
  described in the following steps.
 6. Configure a **Candidate Key Profile Request** with the following settings:
@@ -99,7 +99,7 @@ The goal of this exercise is to configure a master package to emulate an ETL pro
  cube
  processing package will run. Rather than actually processing data, for this simulation, a pop-up message box will
  appear
- telling you which package is running. Once you click `OK`, that package will complete successfully. This
+ telling you which package is running. Once you click <code class="nocopy">OK</code>, that package will complete successfully. This
  will allow you to
  test the control flow.
 
@@ -121,15 +121,15 @@ The goal of this exercise is to configure a master package to emulate an ETL pro
      successfully.
 4. Execute **MasterPackage.dtsx** in Debug mode. Notice that each of the packages opens
  when it starts
- running. Review the pop-up dialog boxes from the individual packages. Click `OK` on one message at a
+ running. Review the pop-up dialog boxes from the individual packages. Click <code class="nocopy">OK</code> on one message at a
  time,
  and review how this affects the task completions on the Control Flow tab of the **MasterPackage.dtsx**
  designer. When completed, exit Debug mode.
-5. Execute the package again, and click `OK` on the task messages in a different order and review how
+5. Execute the package again, and click <code class="nocopy">OK</code> on the task messages in a different order and review how
  the process
  changed. When completed, exit Debug mode.
 6. Configure the **Execute FactProcess 1** task to report a failure even when it succeeds. Run the
  **MasterPackage.dtsx** package again and review the tasks as the package runs. click
- `OK` on the messages
+ <code class="nocopy">OK</code> on the messages
  that appear. When completed, review the final state of the tasks in the **MasterPackage.dtsx** package,
  and then exit Debug mode.
