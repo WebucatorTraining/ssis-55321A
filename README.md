@@ -21,3 +21,4 @@ After converting:
       ```
        our platform interprets backticks (`) as copyable text.  So, as things are now, you will see the copy icon next to all words that have the backticks.   Refer to the screenshot below for an example.   If you’re OK with that you can choose to leave it that way.  If not, you will need to replace the backticks with <code class="nocopy"> and </code>.  This will render the text highlighted in gray without the copy icon.
        ```
+10. Search for **`[^`]** to find any single backticks. If there are any, it's most likely due to a line break between backticks. Just remove the line break and redo the search and replace from the previous step.
