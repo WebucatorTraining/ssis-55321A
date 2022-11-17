@@ -56,7 +56,7 @@ The goal of this exercise is to create a package with a Foreach Loop container t
             * Scope: Package
             * Data type: String
             * Value: Happy Birthday
-        2. Click the ellipsis (`…`) to the right of the Expression column to open the Expression
+        2. Click the ellipsis (<code class="nocopy">…</code>) to the right of the Expression column to open the Expression
          Builder.
         3. In the Expression Builder, use a combination of typing and dragging items from the Variables and
          Parameters and
@@ -169,7 +169,7 @@ The goal of this exercise is to create a package with a Foreach Loop container t
      to point to the **EmailToAddress** variable. Set the email message to be the value set by the
      **EmailSource** variable.
         1. In the Send Mail Task Editor, change to the **Expressions** page.
-        2. Click in the Expressions text box, and then click the ellipsis (`…`) button.
+        2. Click in the Expressions text box, and then click the ellipsis (<code class="nocopy">…</code>) button.
         3. In the Property drop-down list on the first line, select **ToLine.**
         4. Use the ellipsis button (…) to set the Expression to the **User::EmailToAddress** variable.
          Use the

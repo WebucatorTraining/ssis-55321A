@@ -18,8 +18,8 @@ The goal of this exercise is to use the Import/Export Wizard to import data from
          **Note:** If your configuration varies from the default classroom configuration, enter the
          appropriate server name and credentials.
     2. Click <code class="nocopy">Connect</code>.
-    3. Expand <code class="nocopy">Databases</code>, right-click <code class="nocopy">AdventureWorks</code>, and then select `Tasks >
-     Import Data`. The SQL Server Import and Export Wizard opens.
+    3. Expand <code class="nocopy">Databases</code>, right-click <code class="nocopy">AdventureWorks</code>, and then select 
+     <code class="nocopy">Tasks > Import Data</code>. The SQL Server Import and Export Wizard opens.
 2. Use the wizard to load the **Chapter 01 Overview\Labs\Starters\EmployeeHistory.csv**
  file into a
  new table named **[dbo].[MyEmployeeHistory]** in the

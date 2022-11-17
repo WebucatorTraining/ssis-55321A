@@ -13,7 +13,7 @@ The goal of this exercise is to reinforce your ability to work with the derived 
  in the **Chapter 06 Transform\Labs\Starters** folder. If necessary, open the
  **DataSourcesandDestinations.dtsx** package.
     1. Open **SQL Server Data Tools**.
-    2. Select `File > Open > File`. Navigate to the
+    2. Select <code class="nocopy">File > Open > File</code>. Navigate to the
      **Chapter 06 Transform\Labs\Starters\Ch05LabEx1.sln** file, and then click
      <code class="nocopy">Open</code>.
     3. In Solution Explorer under SSIS Packages, right-click **DataSourcesandDestinations.dtsx** and then
@@ -46,8 +46,7 @@ The goal of this exercise is to reinforce your ability to work with the derived 
     [ProductNumber]+" "+[Name]
     ```
     8. Click <code class="nocopy">OK</code> to close the Derived Column Transformation Editor.
-    9. Right-click the **Derived Column** transformation, and then click `Show Advanced
-     Editor`.
+    9. Right-click the **Derived Column** transformation, and then click <code class="nocopy">Show Advanced Editor</code>.
     10. Change to the Input and Output Properties tab.
     11. In the Inputs and outputs area, expand Derived Column Output, expand Output Columns, and then select
      ProdBusinessKey.

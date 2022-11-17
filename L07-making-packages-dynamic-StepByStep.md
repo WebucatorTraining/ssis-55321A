@@ -177,7 +177,7 @@ In this exercise, you will practice working with project parameters, package var
      **@[$Project::ProjEmailToAddress]**.
         1. In the Send Mail Task Editor, click <code class="nocopy">Expressions</code> on the left side to change to the
          Expressions page.
-        2. Click the ellipsis (`…`) next to Expressions under Misc to open the Property Expressions
+        2. Click the ellipsis (<code class="nocopy">…</code>) next to Expressions under Misc to open the Property Expressions
          Editor.
         3. Select ToLine in the Property drop-down list, and then click the Ellipsis on that line to open the
          Expression Builder.

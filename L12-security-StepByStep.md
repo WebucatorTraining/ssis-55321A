@@ -34,8 +34,7 @@ Additionally, if you do not want to log out and back in to test the security set
         6. Verify that your computer name is showing in the **From this location**  If it is not,
          click
          the <code class="nocopy">Locations</code> button and select your computer name from the list.
-        7. Click Advanced to allow you to browse for the Windows user account, and then click `Find
-         Now`.
+        7. Click Advanced to allow you to browse for the Windows user account, and then click <code class="nocopy">Find Now</code>.
         8. In the Search results, highlight **SSISadminUser**, and then click <code class="nocopy">OK</code> to close
          the Advanced portion of the dialog box.
         9. Click <code class="nocopy">OK</code> again to close the Select User or Group dialog box. Leave the Login – New dialog
@@ -49,7 +48,7 @@ Additionally, if you do not want to log out and back in to test the security set
          click <code class="nocopy">OK</code> to close the Login – New dialog box.
     4. Repeat this process for the DeploymentUser and ExecuteUser accounts.
 2. Add the SSISadminUser to the SSIS\_Admin role.
-    1. In Object Explorer, expand `Databases > SSISDB > Security > Roles > Database Roles`.
+    1. In Object Explorer, expand <code class="nocopy">Databases > SSISDB > Security > Roles > Database Roles</code>.
     2. Right-click the **ssis\_admin** role, and then click <code class="nocopy">Properties</code>.
     3. In the Database Role Properties dialog box, on the General page, click <code class="nocopy">Add</code> at the bottom of the
      page.
@@ -146,7 +145,7 @@ Additionally, if you do not want to log out and back in to test the security set
      in other projects already deployed to the server. Additionally, they should not be able to modify any of the
      existing environments.
         1. Type **SSDT** in the Start menu to locate SQL Server Management studio, and then
-         `right-click > Run as different user`.
+         <code class="nocopy">right-click > Run as different user</code>.
         2. In the Windows Security dialog box, type **DeploymentUser** in the User name text box, and
          **Pa$$w0rd** in the Password text box, and then click <code class="nocopy">OK</code>.
         3. Open the **Lab7.sln** file from the Chapter 10\Labs\Starters\Lab7\_Answer
@@ -195,7 +194,7 @@ Additionally, if you do not want to log out and back in to test the security set
     2. The ExecuteUser account should be able to execute packages, but not create environments, modify permissions,
      or
      deploy new projects.
-        1. Use the `Shift-right-click > Run as different user` option to launch SSMS as
+        1. Use the <code class="nocopy">Shift-right-click > Run as different user</code> option to launch SSMS as
          **ExecuteUser** and connect to the Database Engine.
         2. In Object Explorer, under **Integration Services Catalogs > SSISDB > Chapter 10Lab >
          Projects > Lab7 > Packages**, right-click **DynamicPackage.dtsx**, and then

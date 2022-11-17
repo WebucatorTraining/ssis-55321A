@@ -90,15 +90,15 @@
  credentials.
     1. In the Connect to Server dialog box, verify the following options, and then click <code class="nocopy">Connect</code>.
      
-    If you are not running the database engine on your local computer, enter the appropriate
-     server name and authentication information for your environment.
+        If you are not running the database engine on your local computer, enter the appropriate
+        server name and authentication information for your environment.
 
-|  |  |
-| --- | --- |
-| **Field** | **Value** |
-| Server type | Database Engine |
-| Server name | (local) |
-| Authentication | Windows Authentication |
+        |  |  |
+        | --- | --- |
+        | **Field** | **Value** |
+        | Server type | Database Engine |
+        | Server name | (local) |
+        | Authentication | Windows Authentication |
 14. Open a new query window and type the following SQL Code. (If you are using SQL Server 2014 or earlier, you must
  replace the <code class="nocopy">IF EXISTS</code> clause from the DROP table with an <code class="nocopy">IF</code> statement that checks for
  the existence of the table
@@ -115,14 +115,14 @@
 
     ```
 
-    1. Click the <code class="nocopy">New Query</code> button (![new query button](Images/ssis-new-query.png)) or type `Ctrl+N` to open a new query window.
+    1. Click the <code class="nocopy">New Query</code> button (![new query button](Images/ssis-new-query.png)) or type <code class="nocopy">Ctrl+N</code> to open a new query window.
     2. Type the above code in the new query window. The code can be opened from **DROP TABLE
      Ch3.sql** in the
      **Chapter 03 Control Flow\Labs\Starters** folder if needed.
 15. Execute the query to verify that it works.
     1. Press <code class="nocopy">F5</code> or click the <code class="nocopy">Execute</code> button (![execute button](Images/ssis-execute.png)) to run the query.
 16. Copy the code from SSMS into the clipboard memory, and then return to SSDT. Do not close SSMS.
-    1. Highlight the code and press `Ctrl+C`.
+    1. Highlight the code and press <code class="nocopy">Ctrl+C</code>.
 17. Open the DROP and CREATE task editor and set the following properties:
     1. ConnectionType – OLE DB
     2. Connection – new OLE DB connection manager pointing to the AdventureWorks database on your local SQL Server
@@ -145,7 +145,7 @@
          and
          then click <code class="nocopy">OK</code>.
         8. Click <code class="nocopy">OK</code> to close the Configure OLE DB Connection Manager dialog box.
-        9. Click the ellipsis (`…`) in the SQLStatement box to open the dialog box.
+        9. Click the ellipsis (<code class="nocopy">…</code>) in the SQLStatement box to open the dialog box.
         10. Paste the SQL code from your SSMS query in the Enter SQL Query dialog box.
         11. Click <code class="nocopy">OK</code> to close the Enter SQL Query dialog box.
         12. Click <code class="nocopy">OK</code> to close the Execute SQL Task Editor.
@@ -154,5 +154,5 @@
  You may need to Right-click > Refresh the tables folder to see the new table:
  ![Figure 17: Verify Table Existence](Images/ssis-verify-table-existence.png "Figure           17: Verify Table Existence")
 20. Close SSMS.
-21. Click the <code class="nocopy">Save All</code> button (![Save All button](Images/ssis-save-all.png)) to save, and then click `File > Close Solution` to close your
+21. Click the <code class="nocopy">Save All</code> button (![Save All button](Images/ssis-save-all.png)) to save, and then click <code class="nocopy">File > Close Solution</code> to close your
  **Ch3Lab** Leave SSDT open for the next chapter.

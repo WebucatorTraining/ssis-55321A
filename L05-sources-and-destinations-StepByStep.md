@@ -60,7 +60,7 @@ In this lab you will create a package with three data flow tasks. You will confi
             * Header row delimiter: {CR}{LF}
             * Header rows to skip: 0
             * Column names in the first data row: Checked
-        6. Note the warning “Columns are not defined for this connection manager” at the bottom of the window.
+        6. Note the warning “![Warning](Images/ssis-warning-icon.png "Warning")Columns are not defined for this connection manager” at the bottom of the window.
          Switch to
          the Columns page. The editor will assign the column names using the header row from the flat file. Click
          <code class="nocopy">OK</code>.
@@ -89,8 +89,7 @@ In this lab you will create a package with three data flow tasks. You will confi
          **OLE\_ProductsRed\_Destination**.
         9. Right-click the design surface and select Execute task. Green check marks should appear in the corners
          of each
-         box to indicate success. A red “X” icon will appear if there is an error. You need to click `Stop
-         Debugging`
+         box to indicate success. A red “X” icon will appear if there is an error. You need to click <code class="nocopy">Stop Debugging</code>
          to return to design mode and resolve the error before continuing.
 5. Edit the DF\_EmployeesSQLtoExcel data flow transformation as follows:
     1. Add an OLE-DB source named **OLE\_Employees\_Source** that retrieves data from the AdventureWorks
@@ -134,8 +133,7 @@ In this lab you will create a package with three data flow tasks. You will confi
          page, click <code class="nocopy">New</code> next to Name of the Excel sheet. A warning message indicating that there is
          not sufficient
          information appears. Click <code class="nocopy">OK</code> to dismiss it. In the Create Table window, change the table
-         name from `Excel
-         Destination<code class="nocopy"> to </code>**EmpExport`,** and then click <code class="nocopy">OK</code>.
+         name from <code class="nocopy">Excel Destination</code> to <code class="nocopy">EmpExport</code>, and then click <code class="nocopy">OK</code>.
          
         The single quotes that appear in this window are actually “accent grave” characters. Type them
          using the key next to the numeral 1 that is shared with tilde (~).
@@ -183,7 +181,7 @@ In this lab you will create a package with three data flow tasks. You will confi
         1. In the SSIS Toolbox, drag **Source Assistant** to the Design area.
         2. In the Source Assistant – Add New Source window, set Select source type to **Excel**. In
          the Select
-         connection managers area, click `XL\_SalesOrders`, and then click <code class="nocopy">OK</code>.
+         connection managers area, click <code class="nocopy">XL\_SalesOrders</code>, and then click <code class="nocopy">OK</code>.
         3. Double-click the **Excel Source** and verify that the Connection manager is set to
          **XL\_SalesOrders**. Set the Name of the Excel sheet to **Sheet1$** using the
          list. Change to

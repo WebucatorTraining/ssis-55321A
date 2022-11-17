@@ -42,9 +42,9 @@ Every task in this package is intended to fail and generate an error message.
     1. Drag a Script Task from the SSIS Toolbox to the Event Handlers design surface.
     2. Right-click the Script Task, and then click <code class="nocopy">Edit</code>.
     3. In the Script Task Editor, change the ScriptLanguage to **Microsoft Visual Basic**.
-    4. Click the ellipsis (`…`) next to ReadOnlyVariables, click the box to select
+    4. Click the ellipsis (<code class="nocopy">…</code>) next to ReadOnlyVariables, click the box to select
      **System:ErrorDescription**, and then click <code class="nocopy">OK</code>.
-    5. Click the ellipsis (`…`) next to ReadWriteVariables, click the box next to
+    5. Click the ellipsis (<code class="nocopy">…</code>) next to ReadWriteVariables, click the box next to
      **User::ErrorMessage**,
      and then click <code class="nocopy">OK</code>.
 5. Edit the script. Use a Try/Catch block to see if your array already exists. If it does, add the current error
@@ -84,10 +84,10 @@ Every task in this package is intended to fail and generate an error message.
     1. Drag a script task from the SSIS Toolbox to the Event Handlers design surface.
     2. Right-click the Script task, and then click <code class="nocopy">Edit</code>.
     3. In the Script Task Editor, change the ScriptLanguage to **Microsoft Visual Basic**.
-    4. Click the ellipsis (`…`) next to ReadOnlyVariables, click the box to select
+    4. Click the ellipsis (<code class="nocopy">…</code>) next to ReadOnlyVariables, click the box to select
      **User::ErrorMessage**,
      and then click <code class="nocopy">OK</code>.
-    5. Click the ellipsis (`…`) next to ReadWriteVariables, click the box next to
+    5. Click the ellipsis (<code class="nocopy">…</code>) next to ReadWriteVariables, click the box next to
      **User::MailText**, and
      then click <code class="nocopy">OK</code>.
     6. In the Script Task Editor, click <code class="nocopy">Edit Script</code>.
@@ -151,7 +151,7 @@ The goal of this exercise is to configure the tasks and containers in a package 
      **Required**.
 7. Add the forward slash back into the Execute SQL Task 10 SQL statement to cause a divide by zero error.
     1. On the Control Flow tab, right-click <code class="nocopy">Execute SQL Task 10</code>, and then click <code class="nocopy">Edit</code>.
-    2. Click the ellipsis (`…`) that appears when you click in the SQLStatement property.
+    2. Click the ellipsis (<code class="nocopy">…</code>) that appears when you click in the SQLStatement property.
     3. Add the Forward Slash (/) between the 1 and 0, as shown in the following code, and then click
      <code class="nocopy">OK</code>.
      INSERT INTO dbo.DemoTransactions (Task) VALUES (1/0);
@@ -171,7 +171,7 @@ The goal of this exercise is to configure the tasks and containers in a package 
      and only commits the rows once one or more checks have been run on the data. Otherwise, it rolls the changes
      back.
         1. Right-click <code class="nocopy">Execute SQL Task 2</code>, and then click <code class="nocopy">Edit</code>.
-        2. In the Execute SQL Task Editor, click the ellipsis (`…`) next to the SQLStatement property.
+        2. In the Execute SQL Task Editor, click the ellipsis (<code class="nocopy">…</code>) next to the SQLStatement property.
         3. In the Enter SQL Query dialog box, modify the code to include the BEGIN TRANSACTION and COMMIT commands
          as
          shown below, and then click <code class="nocopy">OK</code> to close the Enter SQL Query dialog box.

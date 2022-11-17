@@ -49,7 +49,7 @@ The goal of this exercise is to review the process of deploying a project to a n
 4. Open the Visual Studio solution file located at **Chapter 10
  Deploying\Labs\Starters\Lab7\_Answer\Lab7.sln**.
     1. Open **SQL Server Data Tools**.
-    2. In Visual Studio, click `File > Open > Project/Solution`.
+    2. In Visual Studio, click <code class="nocopy">File > Open > Project/Solution</code>.
     3. Browse to **Chapter 10 Deploying\Labs\Starters\Lab7\_Answer\** and click
      **Lab7.sln**, and then click <code class="nocopy">Open</code>.
 5. Deploy the project to the Chapter 10Lab folder on your SSIS Catalog.
@@ -76,7 +76,7 @@ The goal of this exercise is to review the process of deploying a project to a n
     6. Once the deployment has succeeded, click <code class="nocopy">Close</code>, and then return to SQL Server Management
      Studio.
 6. Verify that the project was successfully deployed.
-    1. In Object Explorer, expand `SSISDB > Chapter 10Lab > Projects`, verify that the Lab5
+    1. In Object Explorer, expand <code class="nocopy">SSISDB > Chapter 10Lab > Projects</code>, verify that the Lab5
      Project
      and **DynamicPackage.dtsx** in the Packages folder were successfully
      deployed.
@@ -119,7 +119,7 @@ The goal of this exercise is to review the process of deploying a project to a n
 12. Map the variables that you created in Step 8 to the project parameters in the **Lab5** project.
     1. In the Configure – Lab7 dialog box, click <code class="nocopy">Parameters</code> in the Select a page area, and then select
      **Lab7** in the Scope drop-down list.
-    2. On the Parameters tab, click the ellipsis (`…`) at the end of the Department row as shown in
+    2. On the Parameters tab, click the ellipsis (<code class="nocopy">…</code>) at the end of the Department row as shown in
      Figure 18:
      ![Figure 18: Configure - Lab5](Images/ssis-configure-lab5.png "Figure 18: Configure - Lab5")
     3. In the Set Parameter Value dialog box, click the radio button for **Use environment variable**,
@@ -167,7 +167,7 @@ Please note, there are several ways to accomplish the same task in SSIS. The boo
 1. Open a command prompt window.
     1. Type cmd into Windows Start > Search box.
 2. Use the /? option to view the available help for dtexec.
-    1. In the *Username*: Command Prompt window, type `dtexec /?` and then press
+    1. In the *Username*: Command Prompt window, type <code class="nocopy">dtexec /?</code> and then press
      <code class="nocopy">Enter</code>.
     2. Use the scroll bar and review the options.
     3. Leave the Command Prompt window open for later in this exercise.
@@ -222,8 +222,7 @@ Please note, there are several ways to accomplish the same task in SSIS. The boo
      your changes before trying to execute the batch file again.
     4. Return to SSMS.
     5. In Object Explorer, go to Integration Services Catalogs > SSISDB > Chapter 10Lab.
-    6. Right-click <code class="nocopy">Chapter 10Lab</code>, and then click `Reports > Standard Reports > All
-     Executions`.
+    6. Right-click <code class="nocopy">Chapter 10Lab</code>, and then click <code class="nocopy">Reports > Standard Reports > All Executions</code>.
     7. Use the ID column to determine the row you are looking for.
     8. Click the Overview link in the row with the most recent time to see the general execution report including
      the

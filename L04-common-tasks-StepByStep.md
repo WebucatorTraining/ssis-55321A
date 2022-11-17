@@ -14,8 +14,8 @@ The goal of this exercise is to create a new project and then modify the default
  TargetServerVersion to
  SQL Server 2016.
     1. Start **SQL Server Data Tools for Visual Studio**.
-    2. Select `File > New > Project`.
-    3. In the New Project window, expand `Business Intelligence > Integration Services`. Select
+    2. Select <code class="nocopy">File > New > Project</code>.
+    3. In the New Project window, expand <code class="nocopy">Business Intelligence > Integration Services</code>. Select
      <code class="nocopy">Integration Services Project</code>. Change the Name to **Ch4LabEx1**. Verify that
      <code class="nocopy">Create directory for solution</code> is checked, and then click <code class="nocopy">OK</code>.
     4. In the Solution Explorer, click <code class="nocopy">Ch4LabEx1</code>. In the Properties window, hover over
@@ -39,7 +39,7 @@ The goal of this exercise is to create a new project and then modify the default
     1. Set the **Operation** to **Copy file**.
         1. In the Operation section, select **Copy file** from the Operation dropdown list.
     2. Set the **SourceConnection** to a new connection manager that points to the existing file **Chapter 04 Common Tasks\Labs\Starters\ ProductsBlue.csv**.
-        1. In the Source Connection section, select `<New Connection…>` from the
+        1. In the Source Connection section, select <code class="nocopy"><New Connection…></code> from the
          SourceConnection dropdown list.
         2. In the File Connection Manager Editor, select <code class="nocopy">Existing File</code> from the Usage type dropdown
          list. Click the <code class="nocopy">Browse</code> button and navigate to **\Chapter 04 Common
@@ -48,7 +48,7 @@ The goal of this exercise is to create a new project and then modify the default
     3. Set the <code class="nocopy">DestinationConnection</code> to a new connection manager that points to the existing folder
      that you wrote down in step 1 above.
         1. In the Destination Connection section of the General page in the File System Task Editor, set
-         <code class="nocopy">DestinationConnection</code> to `<New Connection…>.`
+         <code class="nocopy">DestinationConnection</code> to <code class="nocopy"><New Connection…>.</code>
         2. In the File Connection Manager Editor, select <code class="nocopy">Existing folder</code> from the Usage type
          drop-down list, and **Browse** to the folder that you wrote down in step 1 above, and then
          click
@@ -131,9 +131,8 @@ The goal of this exercise is to utilize the Data Profiling Task to explore the d
     6. Close SQL Server Management Studio.
 2. Return to SSDT and the **Ch4LabEx1** project that you created in Exercise 1.
 3. Add an ADO.NET project connection manager to the AdventureWorksDW database.
-    1. In Solution Explorer, right-click the Connection Managers folder, and then click `New Connection
-     Manager`.
-    2. In the Add SSIS Connection Manager dialog box, select `ADO.NET`, and then click
+    1. In Solution Explorer, right-click the Connection Managers folder, and then click <code class="nocopy">New Connection Manager</code>.
+    2. In the Add SSIS Connection Manager dialog box, select <code class="nocopy">ADO.NET</code>, and then click
      <code class="nocopy">Add</code>.
     3. In the Configure ADO.NET Connection Manager dialog box, click <code class="nocopy">New</code>.
     4. In the Connection Manager dialog box:
@@ -158,7 +157,7 @@ The goal of this exercise is to utilize the Data Profiling Task to explore the d
     4. In the Data Profiling Task Editor on the General tab, verify that DestinationType is set
      **FileConnection**
     5. Set the Overwrite Destination is set to **True**
-    6. In the Destination box, click <`New File connection…>`.
+    6. In the Destination box, click <<code class="nocopy">New File connection…></code>.
     7. In the File Connection Manager Editor, set Usage type to **Create file**. Click
      <code class="nocopy">Browse</code> and navigate to the folder that contains your solution. Enter a File name of
      **DataProfile.xml**, and then click <code class="nocopy">Open</code>. Click <code class="nocopy">OK</code> to
@@ -242,7 +241,7 @@ The goal of this exercise is to configure a master package to emulate an ETL pro
 
 1. Use SQL Server Data Tools to open the **Chapter 04 Common
  Tasks\Labs\Starter\MasterPackage\MasterPackage.sln** solution file.
-    1. In SSDT, click `File > Open > Project/Solution`
+    1. In SSDT, click <code class="nocopy">File > Open > Project/Solution</code>
     2. Browse to **Chapter 04 Common
      Tasks\Labs\Starter\MasterPackage\MasterPackage.sln**, and then click <code class="nocopy">Open</code>.
 2. Add six Execute Package Tasks to the Control Flow of the **MasterPackage.dtsx**

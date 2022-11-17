@@ -51,9 +51,9 @@ CREATE TABLE Ch3
     3. SQLSourceType – Direct Input
     4. SQLStatement – the statement you wrote in SSMS.
 18. Execute the DROP and CREATE task to verify that it works.
-19. Return to SSMS and browse the Object Explorer to verify that the `dbo.Ch3` table exists as shown in Figure 17. You
- may need to `Right-click > Refresh` the tables folder to see the new table:
+19. Return to SSMS and browse the Object Explorer to verify that the <code class="nocopy">dbo.Ch3</code> table exists as shown in Figure 17. You
+ may need to <code class="nocopy">Right-click > Refresh</code> the tables folder to see the new table:
  ![ssis tables folder](Images/ssis-tables-folder.png)
 20. Close SSMS.
-21. Click the <code class="nocopy">Save All</code> button (![Save All button](Images/ssis-save-all.png)) to save, and then click `File > Close Solution` to close your
+21. Click the <code class="nocopy">Save All</code> button (![Save All button](Images/ssis-save-all.png)) to save, and then click <code class="nocopy">File > Close Solution</code> to close your
  **Ch3Lab** solution. Leave SSDT open for the next chapter.
