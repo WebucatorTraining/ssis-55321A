@@ -72,7 +72,7 @@ The goal of this exercise is to create a new project and then modify the default
     1. Drag a Send Mail Task onto the Control flow and connect the Copy File task to it. Right-click the
      connection and select <code class="nocopy">Failure</code> as the type of connection.
     2. Double-click the <code class="nocopy">Send Mail Task</code> to open the Send Mail Task Editor. On the Mail page,
-     set the SmtpConnection to **<New Connection…>.**
+     set the SmtpConnection to **&lt;New Connection…&gt;.**
     3. In the SMTP Connection Manager Editor, set the SMTP server to **localhost**, and then click
      <code class="nocopy">OK</code>.
     4. On the mail page, set the following properties:

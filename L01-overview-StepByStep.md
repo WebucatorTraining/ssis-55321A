@@ -36,7 +36,7 @@ The goal of this exercise is to use the Import/Export Wizard to import data from
     4. Click <code class="nocopy">Open</code>.
     5. On the **Choose a Data Source** page, verify that:
         * Format is set to **Delimited**,
-        * Text qualifier is set to **<none>**,
+        * Text qualifier is set to **&lt;none&gt;**,
         * Header row delimiter is set to **{CR}{LF}**,
         * Header rows to skip is set to **0**,
         * Column names in the first data row is checked.

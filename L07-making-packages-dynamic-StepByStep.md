@@ -168,7 +168,7 @@ In this exercise, you will practice working with project parameters, package var
  field to **SSISPackage@adventureworks.com**.
     1. Right-click the Send Mail Task, and then click <code class="nocopy">Edit</code>.
     2. In the Send Mail Task Editor, click <code class="nocopy">Mail</code> to switch to the Mail page.
-    3. In the SmtpConnection property, click **<New Connection…>** from the drop-down box.
+    3. In the SmtpConnection property, click **&lt;New Connection…&gt;** from the drop-down box.
     4. Type **localhost** in the SMTP server field, and then click <code class="nocopy">OK</code>.
     5. Type **SSISPackage@adventureworks.com** in the From field.
     6. Leave the Send Mail Task Editor open for the next step.

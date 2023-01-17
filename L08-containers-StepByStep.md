@@ -151,7 +151,7 @@ The goal of this exercise is to create a package with a Foreach Loop container t
          **Foreach Loop Container**.
         2. Right-click the **Send Mail Task**, and then click <code class="nocopy">Edit</code>.
         3. In the Send Mail Task Editor, switch to the **Mail** page.
-        4. In the SMTPConnection drop-down, click **<New connection…>**.
+        4. In the SMTPConnection drop-down, click **&lt;New connection…&gt;**.
         5. In the SMTP Connection Manager Editor, type the name of your SMTP server, or localhost if using a local
          SMTP
          server configured for the class.
