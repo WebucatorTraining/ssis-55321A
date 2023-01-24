@@ -29,7 +29,7 @@ In this exercise, you will practice working with project parameters, package var
     2. On the Project.params Design tab, click the **Add Parameter**
     3. Change the Name field to **ProjEmailToAddress**, change the Data type to
      **String**,
-     and then type **ProjectAdmin@adventureworks.com** in the Value column. Leave the other options
+     and then type **ProjectAdmin@adventure-works.com** in the Value column. Leave the other options
      set to
      their default values.
     4. Click the <code class="nocopy">Save All</code>
@@ -100,9 +100,10 @@ In this exercise, you will practice working with project parameters, package var
     4. Once the expression evaluates correctly, click <code class="nocopy">OK</code>.
 7. Create a project parameter named **DestinationPath** to point to the path hard coded in the
  **FF\_EmployeeHistory** connection manager.
- This feature can be used to change the drive letter dynamically when the package moves from the
- development to test and then production servers. You will practice configuring environments in a later
- chapter.
+
+    This feature can be used to change the drive letter dynamically when the package moves from the
+    development to test and then production servers. You will practice configuring environments in a later
+    chapter.
 
     1. In the package designer, in the Connection Managers section, right-click the
      **FF\_EmployeeHistory** connection manager, and then click <code class="nocopy">Edit</code>.
@@ -165,12 +166,12 @@ In this exercise, you will practice working with project parameters, package var
      to
      the Send Mail Task.
 12. Edit the Send Mail Task. Create the appropriate connection manager to your mail server, and then set the From
- field to **SSISPackage@adventureworks.com**.
+ field to **SSISPackage@adventure-works.com**.
     1. Right-click the Send Mail Task, and then click <code class="nocopy">Edit</code>.
     2. In the Send Mail Task Editor, click <code class="nocopy">Mail</code> to switch to the Mail page.
     3. In the SmtpConnection property, click **&lt;New Connection…&gt;** from the drop-down box.
     4. Type **localhost** in the SMTP server field, and then click <code class="nocopy">OK</code>.
-    5. Type **SSISPackage@adventureworks.com** in the From field.
+    5. Type **SSISPackage@adventure-works.com** in the From field.
     6. Leave the Send Mail Task Editor open for the next step.
 13. Use expressions to dynamically set the To and the Subject lines.
     1. Set the **ToLine** property to
@@ -196,26 +197,23 @@ In this exercise, you will practice working with project parameters, package var
         4. Click <code class="nocopy">OK</code> two more times to accept your changes and close the Property Expressions Editor
          and
          the Send Mail Task Editor.
-    3. Change the DelayValidation property to True.
-     When executing a package, the server validates all properties required for successful execution.
-     In the Send Mail task, if all of your email address expressions evaluate to properly formed addresses, the
-     DelayValidation property does not need to be set to True in SSIS 2014 and later. However, since a
-     validation error will
-     stop the package from running, delaying validation is typically still a best practice. Prior versions of
-     SSIS required
-     this field to be set to True when expressions were used in any required fields.
-    
-    
-    
-        1. Click the Send Mail Task to select it, and then press <code class="nocopy">F4</code> to display the Properties
-         window.
-        2. In the Execution section, change the DelayValidation property to **True**.
-    4. Start debugging the package and test the results of the file location and name along with the email subject
-     heading and to address. If necessary, troubleshoot any errors.
-     
+ 14. Change the DelayValidation property to True.
+    When executing a package, the server validates all properties required for successful execution.
+    In the Send Mail task, if all of your email address expressions evaluate to properly formed addresses, the
+    DelayValidation property does not need to be set to True in SSIS 2014 and later. However, since a
+    validation error will
+    stop the package from running, delaying validation is typically still a best practice. Prior versions of
+    SSIS required
+    this field to be set to True when expressions were used in any required fields.
+     1. Click the Send Mail Task to select it, and then press <code class="nocopy">F4</code> to display the Properties
+      window.
+     2. In the Execution section, change the DelayValidation property to **True**.
+15. Start debugging the package and test the results of the file location and name along with the email subject
+  heading and to address. If necessary, troubleshoot any errors.
+  
     If you are using the built-in SMTP with
-     Windows Server, you can find your email at: **C:\inetpub\mailroot\Drop**
-    5. If time permits, change some of the parameters and variables and test the package again.
+    Windows Server, you can find your email at: **C:\inetpub\mailroot\Drop**
+16. If time permits, change some of the parameters and variables and test the package again.
 
 You will learn more about configuring environments and passing parameter values to a package in Chapter 10
  Deploying to the SSIS Catalog.
