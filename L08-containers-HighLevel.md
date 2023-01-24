@@ -40,7 +40,7 @@ The goal of this exercise is to create a package with a Foreach Loop container t
  **RecordSet** variable.
 10. Add a **Send Mail Task** to the Foreach Loop Container.
     1. Configure the SMTPConnection to the SMTP connection information for the class.
-    2. Configure the email message to come from **Sales@AdventureWorks.com**. Set the
+    2. Configure the email message to come from **Sales@adventure-works.com**. Set the
      Subject to “Happy
      Birthday!”
     3. Configure the Send Mail Task to use expressions for the To line and the MessageSource line. Configure the To

@@ -30,7 +30,7 @@ In addition to using an
 7. Add a Script Task to write the contents of the error message array variable to the MailText variable, placing a
  hard return between each error message in the array when writing the error messages to the MailText variable.
 8. Add a task to send an email message to your event handler after the Script Task completes. Set the To Line and
- From Line email addresses to **Admin@adventureworks.com**. Add a subject line of “Package Completed”,
+ From Line email addresses to **Admin@adventure-works.com**. Add a subject line of “Package Completed”,
  and
  a message body populated by your MailText variable.
 9. Test your package.

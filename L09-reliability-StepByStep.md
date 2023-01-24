@@ -99,7 +99,7 @@ Every task in this package is intended to fail and generate an error message.
      right corner.
     9. In the Script Task Editor, click <code class="nocopy">OK</code> to close the editor dialog box.
 8. Add a task to send an email message to your event handler after the Script Task completes. Set the To Line and
- From Line email addresses to **Admin@adventureworks.com**. Add a subject line of “Package Completed”,
+ From Line email addresses to **Admin@adventure-works.com**. Add a subject line of “Package Completed”,
  and
  a message body populated by your MailText variable.
     1. Drag a Send Mail Task from the Common section of the SSIS Toolbox to the Execute Divide By 0 OnPostExecute
@@ -110,7 +110,7 @@ Every task in this package is intended to fail and generate an error message.
     5. In the SmtpConnection drop-down list, select **New connection**.
     6. In the SMTP Connection Manager Editor, enter **localhost** for the SMTP Server, and then click
      <code class="nocopy">OK</code>.
-    7. Set both the From and To fields to **Admin@adventureworks.com**.
+    7. Set both the From and To fields to **Admin@adventure-works.com**.
     8. Set the Subject to **Package Completed**.
     9. Set the MessageSourceType to **Variable**.
     10. Select the **User::MailText** variable in the MessageSource drop-down list, and then click

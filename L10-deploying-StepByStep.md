@@ -93,7 +93,7 @@ The goal of this exercise is to review the process of deploying a project to a n
  **C:\Classfiles\SSIS2016\Studentfiles\Chapter 10Dev\**, set the
  **Department** to
  **Sales**, and the **ProjEmailToAddress** to
- **DevAdmin@adventureworks.com**.
+ **DevAdmin@adventure-works.com**.
     1. Under the Environments folder in Object Explorer, right-click <code class="nocopy">Dev</code>, and then click
      <code class="nocopy">Properties</code>.
     2. In the Environment Properties dialog box, click <code class="nocopy">Variables</code> in the Select a page section.
@@ -103,7 +103,7 @@ The goal of this exercise is to review the process of deploying a project to a n
  **C:\Classfiles\SSIS2016\Studentfiles\Chapter 10QA\**, set the
  **Department** to
  **Quality Assurance**, and the **ProjEmailToAddress** to
- **QAAdmin@adventureworks.com**.
+ **QAAdmin@adventure-works.com**.
     1. Under the Environments folder in Object Explorer, right-click <code class="nocopy">QA</code>, and then click
      <code class="nocopy">Properties</code>.
     2. In the Environment Properties dialog box, click <code class="nocopy">Variables</code> in the Select a page section.
@@ -148,7 +148,7 @@ The goal of this exercise is to review the process of deploying a project to a n
         ![Figure 20: Environment Settings](Images/ssis-environment-settings.png "Figure 20:       Environment Settings")
     5. Open Windows Explorer and Browse to the **C:\Chapter 10Dev** folder to verify that a **SalesDepartmentHistory.csv** file exists.
     6. Go to your mail program or the mail drop folder to verify that there is an email message addressed to
-     DevAdmin@adventureworks.com. If you are using the Windows built-in SMTP service, you should find the message at **C:\inetpub\mailroot\Drop**.
+     DevAdmin@adventure-works.com. If you are using the Windows built-in SMTP service, you should find the message at **C:\inetpub\mailroot\Drop**.
     7. If time permits, repeat your test with the QA environment.
 14. Clean up your work environment by closing any projects, queries, or Windows Explorer windows that you opened
  during this lab.

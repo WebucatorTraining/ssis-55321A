@@ -42,7 +42,7 @@ The goal of this exercise is to create a package with a Foreach Loop container t
             * Name: EmailToAddress
             * Scope: Package
             * Data type: String
-            * Value: DefaultEmail@AdventureWorks.com
+            * Value: DefaultEmail@adventure-works.com
     2. The Name variable should hold the person’s name returned from the birthday table.
         1. Use the <code class="nocopy">Add Variable</code> button to add a variable with the following settings:
             * Name: Name
@@ -157,11 +157,11 @@ The goal of this exercise is to create a package with a Foreach Loop container t
          server configured for the class.
         6. If necessary, configure any of the other properties as provided to you by your IT department.
         7. Click <code class="nocopy">OK</code> to close the SMTP Connection Manager Editor.
-    2. Configure the email message to come from **Sales@AdventureWorks.com**. Set the
+    2. Configure the email message to come from **Sales@adventure-works.com**. Set the
      Subject to “Happy
      Birthday!”
         1. On the Mail page of the Send Mail Task Editor, set the **From** field to
-         **Sales@AdventureWorks.com**.
+         **Sales@adventure-works.com**.
         2. Set the **Subject** field to **Happy Birthday!**
         3. Verify that the **MessageSourceType** is set to **Direct Input**.
     3. Configure the Send Mail Task to use expressions for the To line and the MessageSource line. Configure the To

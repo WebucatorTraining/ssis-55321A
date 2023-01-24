@@ -24,12 +24,12 @@ The goal of this exercise is to review the process of deploying a project to a n
  **C:\Classfiles\SSIS2016\Studentfiles\Chapter 10Dev**, set the
  **Department** to
  **Sales**, and the **ProjEmailToAddress** to
- **DevAdmin@adventureworks.com**.
+ **DevAdmin@adventure-works.com**.
 10. In the **QA** Environment set the **DestinationPath** to
  **C:\Classfiles\SSIS2016\Studentfiles\Chapter 10QA**, set the
  **Department** to
  **Quality Assurance**, and the **ProjEmailToAddress** to
- **QAAdmin@adventureworks.com**.
+ **QAAdmin@adventure-works.com**.
 11. Configure the Lab7 project to reference the Dev and QA environments.
 12. Map the variables that you created in Step 8 to the project parameters in the **Lab5** project.
 13. Execute the **DynamicPackage.dtsx** package, associate the execution with one of the
