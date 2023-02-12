@@ -1,4 +1,4 @@
-### Build Notes
+### These notes are for internal use only and are not relevant to the course content.
 These files were created using the markdown.py script in the courseware-sql repo.
 This requires copying over all created markdown files and all images in the **Manual/Images** folder into the local **Images** folder.
 
